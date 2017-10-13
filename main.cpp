@@ -11,13 +11,12 @@
 
 int main()
 {
-    std::cout << "Started my naive markov chain thingy" << std::endl;
 
     std::map<std::string, std::vector<std::string>> m;
     std::map<std::pair<std::string, std::string>, std::vector<std::string>> m2;
 
     // read input file
-    std::ifstream myfile("cap.txt");
+    std::ifstream myfile("corpus/cap.txt");
 
     int i = 0;
     std::string x;
@@ -37,7 +36,7 @@ int main()
     }
 
     // read input file for m2
-    std::ifstream myfile2("cap.txt");
+    std::ifstream myfile2("corpus/cap.txt");
 
     int i2 = 0;
     std::string x2;
